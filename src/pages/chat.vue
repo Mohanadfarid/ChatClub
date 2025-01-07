@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import ActiveChatContainer from '@/views/chat/ActiveChatContainer.vue';
+import MessagesInput from '@/views/chat/MessagesInput.vue';
 import SideBar from '@/views/chat/SideBar.vue';
 
   //
@@ -13,7 +15,10 @@ import SideBar from '@/views/chat/SideBar.vue';
       <VCol cols="4">
         <SideBar/>
       </VCol>
-      <VCol cols="8">main content</VCol>
+      <VCol cols="8">
+        <ActiveChatContainer/>
+        <MessagesInput/>
+      </VCol>
     </VRow>
   </div>
 </VContainer>
