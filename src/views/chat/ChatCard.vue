@@ -8,9 +8,10 @@
       <v-card
         :class="`ma-2 ms-0 ${isHovering ? 'bg-grey' : ''}`"
         variant="flat"
+        v-bind="props"
       >
         <template v-slot:prepend>
-          <div>
+          <div class="me-2">
             <img
               class="avatar rounded"
               width="70"
@@ -28,16 +29,16 @@
               <span class="text-subtitle-2 me-1">4m</span>
               <v-icon class="text-subtitle-1">mdi-check-all</v-icon>
             </div>
-
           </div>
         </template>
 
-        <template v-slot:subtitle> This is a card subtitle </template>
-
-        <template v-slot:text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          ratione debitis quis est labore voluptatibus!
+        <template v-slot:subtitle>
+          <div class="w-100 d-flex justify-space-between">
+            <p>last message goes here ~!~ ...</p>
+            <v-badge color="success" content="6" inline></v-badge>
+          </div>
         </template>
+
       </v-card>
     </template>
   </v-hover>
