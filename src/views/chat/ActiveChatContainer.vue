@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import SystemMessage from './messagesComponents/SystemMessage.vue';
+import UserReceivedMessage from './messagesComponents/UserReceivedMessage.vue';
+import UserSentMessage from './messagesComponents/UserSentMessage.vue';
+
 //
 </script>
 
@@ -27,6 +31,14 @@
         <v-icon class="me-2">mdi-dots-vertical</v-icon>
       </template>
     </v-toolbar>
+
+    <!-- to do put messages here  -->
+
+    <div class="d-flex flex-column pa-4">
+      <UserReceivedMessage/>
+      <UserSentMessage/>
+      <SystemMessage/>
+    </div>
   </div>
 </template>
 

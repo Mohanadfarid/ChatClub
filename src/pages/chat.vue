@@ -9,7 +9,7 @@ import SideBar from '@/views/chat/SideBar.vue';
 
 <template>
 
-<VContainer>
+<VContainer class="pa-0">
   <div class="py-5" style="height: 100vh">
     <VRow class="h-100" style="border: 1px solid green;">
       <VCol cols="4">
