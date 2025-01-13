@@ -34,7 +34,13 @@ import UserSentMessage from './messagesComponents/UserSentMessage.vue';
 
     <!-- to do put messages here  -->
 
-    <div class="d-flex flex-column pa-4">
+    <div class="d-flex flex-column pa-4" style="height: calc(100vh - 220px); overflow-y: auto;">
+      <UserReceivedMessage/>
+      <UserSentMessage/>
+      <SystemMessage/>
+      <UserReceivedMessage/>
+      <UserSentMessage/>
+      <SystemMessage/>
       <UserReceivedMessage/>
       <UserSentMessage/>
       <SystemMessage/>

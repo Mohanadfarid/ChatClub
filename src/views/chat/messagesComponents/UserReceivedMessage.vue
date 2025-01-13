@@ -17,7 +17,7 @@
     </div>
 
     <!-- user message -->
-    <div class="received-message-body bg-grey-lighten-3 pa-4 mb-2" style="max-width: 50%">
+    <div class="received-message-body bg-grey-lighten-3 pa-4 mb-2" >
       <div class="text-primary">jasmin lowery</div>
       this is the receved message this is the receved message this is the
       receved message this is the receved message this is the receved message
@@ -31,5 +31,6 @@
 <style>
 .received-message-body {
   border-radius: 25px 25px 25px 0px;
+  width: min(300px,100vw);
 }
 </style>

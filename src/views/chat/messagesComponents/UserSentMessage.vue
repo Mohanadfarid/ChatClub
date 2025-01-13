@@ -7,7 +7,7 @@
     <!-- user image  -->
 
     <!-- user message -->
-    <div class="sent-message-body bg-primary pa-4 mb-2" style="max-width: 50%;">
+    <div class="sent-message-body bg-primary pa-4 mb-2" >
       this is the receved message this is the receved message this is the
       receved message this is the receved message this is the receved message
       this is the receved message this is the receved message this is the
@@ -30,5 +30,6 @@
 <style>
 .sent-message-body {
   border-radius: 25px 25px 0px 25px;
+  width: min(300px,100vw);
 }
 </style>
