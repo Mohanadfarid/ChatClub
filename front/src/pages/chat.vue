@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { state, socket } from "@/socket";
 import ActiveChatContainer from "@/views/chat/ActiveChatContainer.vue";
 import MessagesInput from "@/views/chat/MessagesInput.vue";
 import SideBar from "@/views/chat/SideBar.vue";
@@ -41,9 +42,14 @@ const showActiveChat = computed(() => {
     return activeView.value === "chat";
   }
 });
+onMounted(() => {
+console.log(socket)
+})
 </script>
 
 <template>
+
+  <p>state : {{ state }}</p>
   {{ isMobileView }}
   <button
     v-if="isMobileView"
